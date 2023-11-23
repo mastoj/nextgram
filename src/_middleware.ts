@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
+  const searchParams = request.nextUrl.searchParams;
+  if (searchParams.has("no-rewrite")) {
+    return NextResponse.next();
+  }
   console.log("==> path", path);
   const url = `${request.nextUrl.origin}/se${request.nextUrl.pathname}`;
   return NextResponse.rewrite(url);
