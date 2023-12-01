@@ -51,15 +51,15 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@next/env@14.0.4-canary.11":
-  version "14.0.4-canary.11"
-  resolved "https://registry.npmjs.org/@next/env/-/env-14.0.4-canary.11.tgz"
-  integrity sha512-Btynd0VNDmpzVXHEWNzr6wp46HQ7oJxCWaJXrgAl5srQ5bVLvH5u84aqqTNYSrvDWW+OWoCXOGAJ0Z4HVszENw==
+"@next/env@14.0.4-canary.32":
+  version "14.0.4-canary.32"
+  resolved "https://registry.npmjs.org/@next/env/-/env-14.0.4-canary.32.tgz"
+  integrity sha512-vqclm1gFvepd++RJy/FAb+Lps2pLdI60Z4wY57QuD2vzvFmbA+vVUz1XVPiCi9HP4qqOinuAuSl2RfGndzhk2Q==
 
-"@next/swc-darwin-arm64@14.0.4-canary.11":
-  version "14.0.4-canary.11"
-  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.0.4-canary.11.tgz"
-  integrity sha512-k6TxKDb/93UVyAJOIOHhWYLNLe91y6/up61SjKmow/EVGxbLOTpsmsUZn4y2lpYczlcLI33ivyBGQ9VIC1QaHQ==
+"@next/swc-darwin-arm64@14.0.4-canary.32":
+  version "14.0.4-canary.32"
+  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.0.4-canary.32.tgz"
+  integrity sha512-Siu45L3Fy/mjXHkMKNNP8V04sLgv5CTHs8aYSbAkfF8q734w0DK7TSY7HgEeFfmM08qkSMPSoB1X4tPuwR1T3w==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -336,7 +336,7 @@ glob@7.1.6:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-graceful-fs@^4.1.2:
+graceful-fs@^4.1.2, graceful-fs@^4.2.11:
   version "4.2.11"
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
@@ -458,28 +458,29 @@ nanoid@^3.3.6:
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.6.tgz"
   integrity sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==
 
-next@^14.0.4-canary.11:
-  version "14.0.4-canary.11"
-  resolved "https://registry.npmjs.org/next/-/next-14.0.4-canary.11.tgz"
-  integrity sha512-Cnivm9yLj9spWU2V7Hsuvx5RkszPqt3hQfJRXfblHuXqSxVNU58H5ujzDgvYnn/AS8M+QBQtVTdcCqWnq52a2A==
+next@^14.0.4-canary.32:
+  version "14.0.4-canary.32"
+  resolved "https://registry.npmjs.org/next/-/next-14.0.4-canary.32.tgz"
+  integrity sha512-GRAH3RA6vrGOLuCVSUxKq/+j+Rn5bLeX/r5OReZH2M/MpgfSr1iUHCX6/n6PAG+pwXqaEO8q4z2wpgTF9oRGrw==
   dependencies:
-    "@next/env" "14.0.4-canary.11"
+    "@next/env" "14.0.4-canary.32"
     "@swc/helpers" "0.5.2"
     busboy "1.6.0"
     caniuse-lite "^1.0.30001406"
+    graceful-fs "^4.2.11"
     postcss "8.4.31"
     styled-jsx "5.1.1"
     watchpack "2.4.0"
   optionalDependencies:
-    "@next/swc-darwin-arm64" "14.0.4-canary.11"
-    "@next/swc-darwin-x64" "14.0.4-canary.11"
-    "@next/swc-linux-arm64-gnu" "14.0.4-canary.11"
-    "@next/swc-linux-arm64-musl" "14.0.4-canary.11"
-    "@next/swc-linux-x64-gnu" "14.0.4-canary.11"
-    "@next/swc-linux-x64-musl" "14.0.4-canary.11"
-    "@next/swc-win32-arm64-msvc" "14.0.4-canary.11"
-    "@next/swc-win32-ia32-msvc" "14.0.4-canary.11"
-    "@next/swc-win32-x64-msvc" "14.0.4-canary.11"
+    "@next/swc-darwin-arm64" "14.0.4-canary.32"
+    "@next/swc-darwin-x64" "14.0.4-canary.32"
+    "@next/swc-linux-arm64-gnu" "14.0.4-canary.32"
+    "@next/swc-linux-arm64-musl" "14.0.4-canary.32"
+    "@next/swc-linux-x64-gnu" "14.0.4-canary.32"
+    "@next/swc-linux-x64-musl" "14.0.4-canary.32"
+    "@next/swc-win32-arm64-msvc" "14.0.4-canary.32"
+    "@next/swc-win32-ia32-msvc" "14.0.4-canary.32"
+    "@next/swc-win32-x64-msvc" "14.0.4-canary.32"
 
 node-releases@^2.0.12:
   version "2.0.12"
